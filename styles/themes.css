@@ -1,6 +1,88 @@
-/* В этом файле вы опишете значения переменных в разных цветовых схемах.
-Придерживайтесь такого именования классов:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
-*/
+:root.theme-light {
+  --title-weight: 700;
+  --text-weight: 400;
+  --text-color: #000000;
+  --theme-bg: repeating-linear-gradient(
+      to right,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+  --border-color: #000000;
+  --bg-color: #ffffff;
+  --bottom-bg-color: #000000;
+  --bottom-text: #ffffff;
+
+  --heart-spark: #ff0000;
+  --heart-contur: #000000;
+  --heart-bg: #ffffff;
+}
+
+:root.theme-dark {
+  --title-weight: 785;
+  --text-weight: 465;
+  --text-color: #00cc14;
+  --theme-bg: repeating-linear-gradient(
+      to right,
+      #000,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #000,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #007f0c, #004306 100%);
+  --border-color: #00cc14;
+  --bg-color: #000000;
+  --bottom-bg-color: #00cc14;
+  --bottom-text: #00cc14;
+
+  --heart-contur: #00cc14;
+  --heart-spark: #ff0000;
+  --heart-bg: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --title-weight: 785;
+    --text-weight: 465;
+    --text-color: #00cc14;
+    --theme-bg: repeating-linear-gradient(
+        to right,
+        #000,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        #000,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      linear-gradient(to bottom, #007f0c, #004306 100%);
+    --border-color: #00cc14;
+    --bg-color: #000000;
+    --bottom-bg-color: #00cc14;
+    --bottom-text: #00cc14;
+
+    --heart-contur: #00cc14;
+    --heart-spark: #ff0000;
+    --heart-bg: #000000;
+  }
+}
