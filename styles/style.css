@@ -102,7 +102,7 @@
   border: 2px solid var(--border-color);
 }
 
-.post__title {
+.card__title {
   font-family: var(--main-font);
   font-size: 18px;
   font-weight: var(--title-weight);
@@ -173,7 +173,7 @@
 }
 
 .card__icon-button:focus-visible {
-  border-color: var(--title-weight-border-color);
+  border-color: var(--border-color);
 }
 
 .like-button {
@@ -220,10 +220,11 @@
 }
 
 .footer {
-  inline-size: clamp(19.125rem, 18.3988rem + 3.0986vw, 21.1875rem);
+  inline-size: clamp(306px, 50%, 335px);
   margin-inline: auto;
   background-color: var(--bg-color);
-  margin-block: 50px;
+  margin-block-start: 50px;
+  margin-block-end: 100px;
 }
 
 .diskette {
